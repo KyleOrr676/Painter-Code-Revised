@@ -25,9 +25,6 @@ public class Main {
         double wallsize = heightinput * widthinput;
         System.out.println("Wall size is: " + wallsize);
 
-        double PaintPotVol = 1; //Assumption that the paint pot is 1 Litre!
-        double PaintPot = 6; //Assumption that one pot covers 6 Metres Squared!
-
         Scanner PaintPotVl = new Scanner(System.in);
         System.out.println("How much paint is in the pot in litres: ");
         double paintpotinput = PaintPotVl.nextDouble();
@@ -88,5 +85,3 @@ public class Main {
             } while (enterAgain);
         }
     }
-
-
