@@ -73,10 +73,18 @@ public class Main {
         if (cont.equals("No")){
             enterAgain = false;
         }
-
-
-
-
+        if (cont.equals("NO")){
+            enterAgain = false;
+        }
+        if (cont.equals("No!")){
+            enterAgain = false;
+        }
+        if (cont.equals("YES")){
+            enterAgain = true;
+        }
+        if (cont.equals("Yes!")){
+            enterAgain = true;
+        }
             } while (enterAgain);
         }
     }
