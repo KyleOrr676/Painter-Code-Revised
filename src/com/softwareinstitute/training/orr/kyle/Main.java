@@ -38,17 +38,18 @@ public class Main {
         System.out.println("Number of cans needed is: " + NumberOfCans);
 
         Scanner PaintChoice = new Scanner(System.in);
-        System.out.println("What kind of paint have you chosen? (1 for Fancy, 2 for Basic) ");
+        System.out.println("What kind of paint have you chosen? (0 for Matte, 1 for Gloss, 2 for Metallic, 3 for Oil, 4 for acrylic) ");
         int paintchoiceinput = PaintChoice.nextInt();
 
         int choice = 1;
         String message;
-                if (paintchoiceinput == 1){
-                    message = "You have chosen fancy paint";
-                }
-                else{
-                    message = "You have chosen basic paint";
-                }
+        message = switch (paintchoiceinput) {
+            case 0 -> "Matte";
+            case 1 -> "Gloss";
+            case 2 -> "Metallic";
+            case 3 -> "Oil Paint";
+            default -> "Acrylic";
+                };
                 System.out.println(message);
 
         Scanner CostScan = new Scanner(System.in);
