@@ -37,6 +37,21 @@ public class Main {
         NumberOfCans = Math.ceil(wallsize/PaintPotCover);
         System.out.println("Number of cans needed is: " + NumberOfCans);
 
+        Scanner PaintChoice = new Scanner(System.in);
+        System.out.println("What kind of paint have you chosen? (1 for Fancy, 2 for Basic) ");
+        double paintchoiceinput = PaintChoice.nextDouble();
+
+        int choice = 1;
+        String message;
+                if (choice == 1){
+                    message = "You have chosen fancy paint";
+                }
+                else{
+                    message = "You have chosen basic paint";
+                }
+
+                System.out.println(message);
+
         Scanner CostScan = new Scanner(System.in);
         System.out.println("What is the cost of the can: ");
         double costinput = CostScan.nextDouble();
