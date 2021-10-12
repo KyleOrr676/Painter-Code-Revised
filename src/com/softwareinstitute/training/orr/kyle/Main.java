@@ -6,6 +6,8 @@ public class Main {
 
     public static void main(String[] args)
     {
+        boolean enterAgain = true;
+        do{
         Scanner HeightScan = new Scanner(System.in);
         System.out.println("Enter Wall Height: ");
         double heightinput = HeightScan.nextDouble();
@@ -59,7 +61,24 @@ public class Main {
         double CostToPaint;
         CostToPaint = costinput * NumberOfCans;
         System.out.println("The cost to paint is: " + CostToPaint);
+
+        Scanner enterScan = new Scanner(System.in);
+        System.out.println("Would you like to enter details again? y/n");
+        String enterinput = enterScan.next();
+        System.out.println("Do you wish to continue? ");
+        String cont = enterScan.next();
+        if (cont.equals("no") ) {
+            enterAgain = false;
+        }
+        if (cont.equals("No")){
+            enterAgain = false;
+        }
+
+
+
+
+            } while (enterAgain);
+        }
     }
 
-}
 
