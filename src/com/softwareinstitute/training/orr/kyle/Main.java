@@ -45,7 +45,7 @@ public class Main {
         CostToPaint = costinput * NumberOfCans;
         System.out.println("The cost to paint is: " + CostToPaint);
 
-        // Code is now complete
+        // Code is now complete!
     }
 
 }
