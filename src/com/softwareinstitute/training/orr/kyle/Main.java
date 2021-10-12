@@ -15,13 +15,13 @@ public class Main {
         double widthinput = WidthScan.nextDouble();
 
         String Height = HeightScan.nextLine();
-        System.out.println("Wall Height is " + heightinput);
+        System.out.println("Wall Height is: " + heightinput);
 
         String Width = WidthScan.nextLine();
-        System.out.println("Wall Width is " + widthinput);
+        System.out.println("Wall Width is: " + widthinput);
 
         double wallsize = heightinput * widthinput;
-        System.out.println("Wall size is " + wallsize);
+        System.out.println("Wall size is: " + wallsize);
 
         double PaintPotVol = 1; //Assumption that the paint pot is 1 Litre!
         double PaintPot = 6; //Assumption that one pot covers 6 Metres Squared!
@@ -35,7 +35,7 @@ public class Main {
 
         double NumberOfCans;
         NumberOfCans = Math.ceil(wallsize/PaintPotCover);
-        System.out.println("Number of cans needed is " + NumberOfCans);
+        System.out.println("Number of cans needed is: " + NumberOfCans);
 
         Scanner CostScan = new Scanner(System.in);
         System.out.println("What is the cost of the can: ");
@@ -43,7 +43,7 @@ public class Main {
 
         double CostToPaint;
         CostToPaint = costinput * NumberOfCans;
-        System.out.println("The cost to paint is " + CostToPaint);
+        System.out.println("The cost to paint is: " + CostToPaint);
     }
 
 }
