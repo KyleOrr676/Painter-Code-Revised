@@ -106,8 +106,6 @@ public class Main {
             System.out.println("The cost to paint is: £" + CostToPaint);
 
             Scanner enterScan = new Scanner(System.in);
-            System.out.println("Would you like to enter details again? y/n");
-            String enterinput = enterScan.next();
             System.out.println("Do you wish to continue? ");
             String cont = enterScan.next();
             if (cont.equals("no")) {
